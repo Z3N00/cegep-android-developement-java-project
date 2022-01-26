@@ -16,9 +16,10 @@
         <entry key="..\:/cegep acadmic documents/sem4/Melodee/app/src/main/res/layout/item_image.xml" value="0.259375" />
         <entry key="..\:/cegep acadmic documents/sem4/Melodee/app/src/main/res/layout/item_info.xml" value="0.259375" />
         <entry key="..\:/cegep acadmic documents/sem4/Melodee/app/src/main/res/menu/nav_menu.xml" value="0.259375" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.335" />
       </map>
     </option>
   </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK" />
 </project>
