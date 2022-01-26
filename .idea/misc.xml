@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/cegep acadmic documents/sem4/Melodee/app/src/main/res/drawable/back.xml" value="0.25" />
+        <entry key="..\:/cegep acadmic documents/sem4/Melodee/app/src/main/res/layout/activity_login.xml" value="0.259375" />
+        <entry key="..\:/cegep acadmic documents/sem4/Melodee/app/src/main/res/layout/activity_notification.xml" value="0.259375" />
+        <entry key="..\:/cegep acadmic documents/sem4/Melodee/app/src/main/res/layout/activity_search.xml" value="0.259375" />
+        <entry key="..\:/cegep acadmic documents/sem4/Melodee/app/src/main/res/layout/activity_settings.xml" value="0.259375" />
+        <entry key="..\:/cegep acadmic documents/sem4/Melodee/app/src/main/res/layout/activity_splash.xml" value="0.259375" />
+        <entry key="..\:/cegep acadmic documents/sem4/Melodee/app/src/main/res/layout/activity_video_player.xml" value="0.259375" />
+        <entry key="..\:/cegep acadmic documents/sem4/Melodee/app/src/main/res/layout/each_video.xml" value="0.259375" />
+        <entry key="..\:/cegep acadmic documents/sem4/Melodee/app/src/main/res/layout/item_add.xml" value="0.259375" />
+        <entry key="..\:/cegep acadmic documents/sem4/Melodee/app/src/main/res/layout/item_email.xml" value="0.259375" />
+        <entry key="..\:/cegep acadmic documents/sem4/Melodee/app/src/main/res/layout/item_image.xml" value="0.259375" />
+        <entry key="..\:/cegep acadmic documents/sem4/Melodee/app/src/main/res/layout/item_info.xml" value="0.259375" />
+        <entry key="..\:/cegep acadmic documents/sem4/Melodee/app/src/main/res/menu/nav_menu.xml" value="0.259375" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK" />
+</project>
