@@ -1,35 +1,44 @@
 package com.aiodev.melodee;
 
 public class Video {
-    private String videoUrl , title , desc;
+    private String audio, caption, userID, video;
 
-    public Video(String videoUrl, String title, String desc) {
-        this.videoUrl = videoUrl;
-        this.title = title;
-        this.desc = desc;
+    public Video(String audio, String caption, String userID, String video) {
+        this.audio = audio;
+        this.caption = caption;
+        this.userID = userID;
+        this.video = video;
     }
 
-    public String getVideoUrl() {
-        return videoUrl;
+    public String getAudio() {
+        return audio;
     }
 
-    public void setVideoUrl(String videoUrl) {
-        this.videoUrl = videoUrl;
+    public void setAudio(String audio) {
+        this.audio = audio;
     }
 
-    public String getTitle() {
-        return title;
+    public String getCaption() {
+        return caption;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
+    public void setCaption(String caption) {
+        this.caption = caption;
     }
 
-    public String getDesc() {
-        return desc;
+    public String getUserID() {
+        return userID;
     }
 
-    public void setDesc(String desc) {
-        this.desc = desc;
+    public void setUserID(String userID) {
+        this.userID = userID;
+    }
+
+    public String getVideo() {
+        return video;
+    }
+
+    public void setVideo(String video) {
+        this.video = video;
     }
 }

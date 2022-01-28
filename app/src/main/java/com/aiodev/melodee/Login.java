@@ -88,7 +88,7 @@ public class Login extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 switch (view.getId()){
-                    case R.id.signin:
+                    case R.id.googleSignin:
                         signIn();
                         break;
                 }
@@ -149,6 +149,7 @@ public class Login extends AppCompatActivity {
     private void handleSignInResult(Task<GoogleSignInAccount> completedTask){
         try{
             GoogleSignInAccount account = completedTask.getResult(ApiException.class);
+
             Toast.makeText(Login.this, "User logged in successfully", Toast.LENGTH_SHORT).show();
             startActivity(new Intent(Login.this, MainActivity.class));
         }catch (ApiException e){

@@ -22,6 +22,11 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
 import com.google.firebase.auth.UserProfileChangeRequest;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.FirebaseFirestore;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class Register extends AppCompatActivity {
 
@@ -30,12 +35,12 @@ public class Register extends AppCompatActivity {
     FirebaseAuth mAuth;
     ImageView gsignin;
 
-
+    FirebaseFirestore firestore;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
-
+        firestore = FirebaseFirestore.getInstance();
         loginbtn = findViewById(R.id.loginbtn);
         usernameS = findViewById(R.id.username);
         passwordS = findViewById(R.id.password);
@@ -105,8 +110,18 @@ public class Register extends AppCompatActivity {
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if (task.isSuccessful()){
+                        FirebaseUser mFirebaseUser = mAuth.getCurrentUser();
+                        String uId = mFirebaseUser.getUid();
+                        DocumentReference documentReference = firestore.collection("users").document(uId);
+
+                        Map<String, String> user = new HashMap<>();
+                        user.put("name", name);
+                        user.put("email", email);
+
+                        documentReference.set(user).addOnSuccessListener(unused -> {
+
+                        }).addOnFailureListener(e -> Toast.makeText(getApplicationContext(), e.toString(), Toast.LENGTH_SHORT).show());
                         Toast.makeText(Register.this, "User registered successfully", Toast.LENGTH_SHORT).show();
-                        //startActivity(new Intent(Register.this, Login.class));
                         updateUser();
                     }else{
                         Toast.makeText(Register.this, "Registration Error: " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();

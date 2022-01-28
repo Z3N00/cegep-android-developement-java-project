@@ -3,6 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/navi1/AndroidStudioProjects/cegep-android-developement-java-project/app/src/main/res/drawable/ic_home.xml" value="0.1" />
+        <entry key="..\:/Users/navi1/AndroidStudioProjects/cegep-android-developement-java-project/app/src/main/res/layout/activity_login.xml" value="0.12" />
+        <entry key="..\:/Users/navi1/AndroidStudioProjects/cegep-android-developement-java-project/app/src/main/res/layout/activity_main.xml" value="0.12" />
+        <entry key="..\:/Users/navi1/AndroidStudioProjects/cegep-android-developement-java-project/app/src/main/res/layout/activity_video_player.xml" value="0.1" />
         <entry key="..\:/cegep acadmic documents/sem4/Melodee/app/src/main/res/drawable/back.xml" value="0.25" />
         <entry key="..\:/cegep acadmic documents/sem4/Melodee/app/src/main/res/layout/activity_login.xml" value="0.259375" />
         <entry key="..\:/cegep acadmic documents/sem4/Melodee/app/src/main/res/layout/activity_notification.xml" value="0.259375" />

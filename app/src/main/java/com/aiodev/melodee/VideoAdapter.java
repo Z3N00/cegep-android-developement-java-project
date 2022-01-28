@@ -1,6 +1,8 @@
 package com.aiodev.melodee;
 
 import android.media.MediaPlayer;
+import android.os.Build;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,6 +10,7 @@ import android.widget.TextView;
 import android.widget.VideoView;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
@@ -27,9 +30,10 @@ public class VideoAdapter extends RecyclerView.Adapter<VideoAdapter.VideoviewHol
         return new VideoviewHolder(view);
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.Q)
     @Override
     public void onBindViewHolder(@NonNull VideoviewHolder holder, int position) {
-            holder.setVideoData(videoList.get(position));
+        holder.setVideoData(videoList.get(position));
     }
 
     @Override
@@ -50,10 +54,13 @@ public class VideoAdapter extends RecyclerView.Adapter<VideoAdapter.VideoviewHol
             desc = itemView.findViewById(R.id.video_desc);
         }
 
+        @RequiresApi(api = Build.VERSION_CODES.Q)
         public void setVideoData(Video video){
-            title.setText(video.getTitle());
-            desc.setText(video.getDesc());
-            videoView.setVideoPath(video.getVideoUrl());
+            title.setText(video.getAudio());
+            Log.d("name", video.getAudio());
+            desc.setText(video.getCaption());
+            Log.d("Video Url", video.getVideo());
+            videoView.setVideoPath(video.getVideo());
 
             videoView.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
                 @Override
